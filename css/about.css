@@ -1,0 +1,400 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root{
+  --black-color:#000000;
+  --gray-color:#333333;
+  --white-color:#ffffff;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: var(--black-color);
+}
+img
+{
+  display: block;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.site-header{
+  width: 100%;
+  background-image: url("../images/background.jpg");
+}
+
+
+.header-top{
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.site-logo{
+  margin-right: auto;
+}
+
+.site-logo-img{
+  display: block;
+  margin-right: auto;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.nav-link{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.nav-item:not(:first-child){
+  margin-left: 40px;
+}
+
+.hero{
+  width: 100%;
+  background-image: url("../images/background.jpg");
+}
+
+.hero-main{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+}
+
+.hero-info{
+  width: 372px;
+  margin: 0;
+  margin-top: 120px;
+  padding: 0;
+}
+
+.hero-info-title{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.hero-info-text{
+  margin: 24px 0 34px 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero-image{
+  position: relative;
+  left: 50px;
+}
+
+.hero-image:before{
+  content: " ";
+  position: absolute;
+  left:-70px;
+  top: -65px;
+  width: 160px;
+  height: 160px;
+  background-image: url("../images/alfred.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commitment{
+  width: 100%;
+  overflow: hidden;
+}
+
+.commitment-background{
+  position: relative;
+  width: 1400px;
+  margin: 20px auto;
+  padding: 160px 0 200px;
+  background-image: url("../images/backgrond-main.png ");
+}
+.commitment-background::before
+{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -65px;
+  left: -350px;
+  width: 545px;
+  height: 591px;
+  background-image: url("../images/vector-thirt.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.commitment-info
+{
+  position: relative;
+  margin: 0 64px 0 auto;
+  width: 626px;
+}
+
+.commitment-info::before
+{
+  content: " ";
+  position: absolute;
+  z-index: 2;
+  left: -545px;
+  width: 360px;
+  height: 364px;
+  background-image: url("../images/about-page/coop-coffee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commitment-title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+
+.commitment-text
+{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--gray-color);
+}
+
+
+.quality-background
+{
+  width: 1400px;
+  margin: 160px auto 20px;
+  padding: 100px 0 118px 123px;
+  background-image: url(../images/about-page/quality.jpg);
+}
+
+.quality-info
+{
+  position: relative;
+  width: 639px;
+  color: var(--white-color);
+}
+
+.quality-info::after
+{
+  content: " ";
+  position: absolute;
+  right: -588px ;
+  bottom: -28px;
+  width: 550px;
+  height: 500px;
+  background-image: url(../images/about-page/wumans.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white-title
+{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  font-variant: small-caps;
+  color: var(--white-color);
+}
+
+.white-text
+{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--white-color);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.headquarters-background
+{
+  width: 1400px;
+  padding: 50px 30px 100px;
+  margin: 0 auto 50px;
+  background-image: url(../images/about-page/headquarters.jpg);
+}
+
+.headquarters-title
+{
+  margin-bottom: 80px;
+  text-align: center;
+}
+.headquarters-list
+{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headquarters-item
+{
+  position: relative;
+  width: 433px;
+  padding: 187px 20px 40px;
+  background-color: var(--white-color);
+}
+
+.headquarters-item:nth-child(1)
+{
+  padding-top: 140px;
+}
+
+.headquarters-item:nth-child(1)::after
+{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  right: 55px;
+  width: 120px;
+  height: 143px;
+  background-image: url("../images/about-page/uk.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.headquarters-item:nth-child(2)::after
+{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  right: 55px;
+  width: 120px;
+  height: 120px;
+  background-image: url("../images/about-page/Canada.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.headquarters-item:nth-child(3)::after
+{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  right: 55px;
+  width: 120px;
+  height: 107px;
+  background-image: url("../images/about-page/Australia.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.headquarters-item-title
+{
+
+  margin: 0 0 10px ;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  color: var(--gray-color);
+}
+
+.headquarters-info-text
+{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gray-color);
+}
+
+
+footer
+{
+  background-image: url(../images/background.jpg);
+}
+
+.footer-box
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 67px 30px;
+}
+
+.footer-link
+{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-list
+{
+  width: 150px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
